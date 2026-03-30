@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  ezbookkeeping:
+    image: mayswind/ezbookkeeping:latest
+    container_name: ezbookkeeping
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      - EBK_MCP_ENABLE_MCP=true
+    volumes:
+      - ./data:/ezbookkeeping/data
+      - ./storage:/ezbookkeeping/storage
