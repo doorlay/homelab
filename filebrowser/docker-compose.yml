@@ -6,11 +6,9 @@ services:
       - PUID=1000 #"id $user" to find your uid & gid values
       - PGID=1000
     volumes:
+      - /data/backups:/srv
       - ./database:/filebrowser/database
       - ./config:/filebrowser/config
-      #- /home/user:/srv #change 'user' to the name of your account
-      #- /home/user/appdata/filebrowser:/database #this will create the filebrowser.db file
-      #- /home/user/appdata/filebrowser:/config #this will create the settings.json file
     ports:
       - 8081:80 
     restart: unless-stopped
