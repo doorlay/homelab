@@ -1,3 +1,6 @@
 [submodule "cloudflare-ddns-updater"]
 	path = cloudflare-ddns-updater
 	url = https://github.com/doorlay/cloudflare-ddns-updater.git
+[submodule "trmnl-agenda"]
+	path = trmnl-agenda
+	url = https://github.com/doorlay/trmnl-agenda.git
