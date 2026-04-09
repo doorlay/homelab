@@ -6,7 +6,7 @@ services:
       - PUID=1000 #"id $user" to find your uid & gid values
       - PGID=1000
     volumes:
-      - /data/backups:/srv
+      - /data/server-sync:/srv
       - ./database:/filebrowser/database
       - ./config:/filebrowser/config
     ports:
